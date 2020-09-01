@@ -1,4 +1,4 @@
-# Hello, Elevator
+# Hey, Elevator
 
 The goal of this project is to create a speech recognition system that can be deployed in a microcontroller to enable hands-free operation (voice control) of elevators. The intended purpose is to reduce physical interactions with high-contact surfaces that may <a href="https://www.businessinsider.com/coronavirus-jumped-between-people-via-elevator-surfaces-study-2020-7">contribute to the spread of COVID-19</a>. Although the primary mode of transmission is known to be <a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/how-covid-spreads.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fprepare%2Ftransmission.html">airborne droplets</a>, eliminating as many potential routes of transmission as possible will help to slow the spread.
 
