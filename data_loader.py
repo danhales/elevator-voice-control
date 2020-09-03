@@ -4,6 +4,7 @@ import tqdm
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
+from python_speech_features import mfcc
 
 # to convert between integers and strings
 digit_names = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
