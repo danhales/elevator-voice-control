@@ -183,7 +183,7 @@ def split_metadata(digits=['zero', 'one', 'two', 'three', 'four', 'five', 'six',
 
     # one-hot encode the classes for classifying
     print('One-hot encoding the target variable...')
-    Y = pd.get_dummies(mdf.digit)[digit_names]
+    Y = pd.get_dummies(mdf.digit)[digits]
 
     # call sklearn.model_selection's train_test_split, pass it the arguments passed
     # to split_metadata and directly return the return values
@@ -530,7 +530,7 @@ def load_mfcc_data(digits=['zero', 'one', 'two', 'three', 'four', 'five', 'six',
         print('Loading raw test data from wav files...')
         for uid_test in tqdm.tqdm(X_test_md.index, desc='    loading test data'):
             test_obs, sr = librosa.load(X_test_md.loc[uid_test], sr=8000)
-            X_test.append(librosa.feature.mfcc(test_obs))
+            # X_test.append(librosa.feature.mfcc(test_obs))
             X_test.append(mfcc(test_obs))
 
         print('Converting test data to numpy array...')
